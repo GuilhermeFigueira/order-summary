@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+	return (
+		<div className="flex flex-col bg-blue-pale h-screen w-screen items-center justify-center">
+			<main className="flex flex-col mx-auto rounded-2xl bg-white items-center max-w-md ">
+				<header className="w-full">
+					<img
+						src="/illustration-hero.svg"
+						alt="A cartoon girl with headphones connected to a smartphone dancing."
+						className="rounded-t-2xl w-full h-full"
+					/>
+				</header>
+				<article className="flex flex-col items-center p-8 gap-6">
+					<div className="text-center gap-4 flex flex-col">
+						<h1 className="text-2xl text-blue-dark_blue font-black">
+							Order Summary
+						</h1>
+						<p className="text-blue-desaturated text-center font-medium leading-7 md:">
+							You can now listen to millions of songs, audiobooks,
+							and podcasts on any device anywhere you like!
+						</p>
+					</div>
+					<div className="flex flex-row bg-blue-very_pale p-4 items-center rounded-xl w-full justify-between">
+						<div className="flex flex-row gap-6">
+							<img src="/icon-music.svg" alt="" />
+							<div>
+								<h2 className="text-blue-dark_blue font-black">
+									Annual Plan
+								</h2>
+								<span className="text-blue-desaturated font-bold">
+									$59.99/year
+								</span>
+							</div>
+						</div>
+						<h3 className="text-blue-bright underline cursor-pointer font-bold hover:text-blue-bright/60 hover:no-underline">
+							Change
+						</h3>
+					</div>
+					<footer className="w-full flex flex-col gap-4">
+						<button className="bg-blue-bright text-white p-4 rounded-xl shadow-lg font-black shadow-blue-bright/30 hover:bg-blue-bright/60">
+							Proceed to Payment
+						</button>
+						<button className="text-blue-desaturated font-black hover:text-blue-dark_blue ">
+							Cancel Order
+						</button>
+					</footer>
+				</article>
+			</main>
+			<div className="text-center pt-4 justify-self-end">
+				Challenge by{" "}
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+				>
+					Frontend Mentor
+				</a>
+				. Coded by{" "}
+				<a
+					href="https://github.com/guilhermefigueira"
+					target="_blank"
+					className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-sky-700 font-bold hover:text-lg hover:tracking-widest transition-all "
+				>
+					Guilherme Figueira
+				</a>
+				.
+			</div>
+		</div>
+	);
 }
 
-export default App
+export default App;
