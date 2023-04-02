@@ -5,3 +5,8 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
+.Background {
+	background: url(/pattern-background-desktop.svg), #e1e9ff;
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain;
+}

@@ -1,6 +1,6 @@
 function App() {
 	return (
-		<div className="flex flex-col bg-blue-pale h-screen w-screen items-center justify-center [background-size:contain] [background:url(/pattern-background-desktop.svg),#e1e9ff] [background-repeat:no-repeat,no-repeat;]">
+		<div className="flex flex-col bg-blue-pale h-screen w-screen items-center justify-center Background">
 			<main className="flex flex-col mx-auto rounded-2xl bg-white items-center max-w-md ">
 				<header className="w-full">
 					<img
