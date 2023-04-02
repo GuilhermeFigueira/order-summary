@@ -1,6 +1,6 @@
 function App() {
 	return (
-		<div className="flex flex-col bg-blue-pale h-screen w-screen items-center justify-center">
+		<div className="flex flex-col bg-blue-pale h-screen w-screen items-center justify-center [background-size:contain] [background:url(/pattern-background-desktop.svg),#e1e9ff] [background-repeat:no-repeat,no-repeat;]">
 			<main className="flex flex-col mx-auto rounded-2xl bg-white items-center max-w-md ">
 				<header className="w-full">
 					<img
@@ -36,10 +36,10 @@ function App() {
 						</h3>
 					</div>
 					<footer className="w-full flex flex-col gap-4">
-						<button className="bg-blue-bright text-white p-4 rounded-xl shadow-lg font-black shadow-blue-bright/30 hover:bg-blue-bright/60">
+						<button className="bg-blue-bright text-white p-4 rounded-xl shadow-lg font-black shadow-blue-bright/30 hover:bg-blue-bright/60 transition-all duration-300">
 							Proceed to Payment
 						</button>
-						<button className="text-blue-desaturated font-black hover:text-blue-dark_blue ">
+						<button className="text-blue-desaturated font-black hover:text-blue-dark_blue transition-all duration-300">
 							Cancel Order
 						</button>
 					</footer>
